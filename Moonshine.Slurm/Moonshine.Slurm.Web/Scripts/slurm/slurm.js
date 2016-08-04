@@ -53,20 +53,52 @@ slurm.main = {
 
     CloseFacebookLogin: function () { slurm.main.returnToSteps(); },
 
-    FBEventSelected: function () { },
+    FBEventSelected: function () {
+        $('.fb-event-item').on('click', function () {
+            slurm.main.ShowStep4();
+        });
+       
+    },
 
-    ExecuseSelected: function () { },
+    ExecuseSelected: function () {
+        $('.excuse-item').on('click', function () {
+            //Save - copy excuse and return - display excuse confirmation
+        });
+    },
 
-    CalendarDateSelected: function () { },
+    CalendarDateSelected: function () {
+        $('.calendar-date-selected').on('click', function () {
+            slurm.main.ShowStep2();
+        });
+    },
 
-    PublicEventTypeClick: function () { },
+    PublicEventTypeClick: function () {
+        $('#public-event-bttn').on('click', function () {
+            slurm.main.ShowStep3();
+        });
+    },
 
-    PrivateEventTypeClick: function () { },
+    PrivateEventTypeClick: function () {
+        $('#private-event-bttn').on('click', function () {
+            //TODO Grab authtoken from cache see if it's null;
+            if (false) {
+                slurm.main.ShowFacebookLogin();
+            } else {
+                slurm.main.ShowStep3();
+            }
+        });
+    },
 
-    TrendingEventTypeClick: function () { },
+    TrendingEventTypeClick: function () {
+        $('#trending-event-bttn').on('click', function () {
+            slurm.main.ShowTrendingExcuses();
+        })
+    },
 
     GoHomeClick: function () {
-
+        $('#home-bttn').on('click', function () {
+            slurm.main.returnHome();
+        })
     },
   
 };
