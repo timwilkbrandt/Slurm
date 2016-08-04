@@ -2,12 +2,23 @@
     ViewBag.Title = "Home Page";
 }
 
-<div id="wrapper">
+<div id="wrapper" class="home">
 
     <div id="main">
         <div id="header">
             <p>Drink More Slurm &mdash; Excuse Generator</p>
         </div>
+
+        <!-- home page content -->
+        <div id="homepage-content">
+            <div class="content" id="home-click">
+                <h1>Sorry, we're busy drinking...</h1>
+                <p>(Click to generate your own excuse)</p>
+                <img src="slurm-logo.png" alt="slurm logo" />
+            </div>
+        </div>
+
+
 
         <div id="content">
             <!-- non home page logo and nav -->
@@ -29,14 +40,6 @@
                 </div>
             </div>
 
-            <!-- home page content -->
-            <div id="homepage-content">
-                <div class="content" id="home-click">
-                    <h1>Sorry, we're busy drinking...</h1>
-                    <p>(Click to generate your own excuse)</p>
-                    <img src="slurm-logo.png" alt="slurm logo" />
-                </div>
-            </div>
 
             <!-- screen 2 content calendar -->
             <div id="calendar-content">
@@ -172,16 +175,14 @@
                 <p id="selected-excuse">Your excuse here.</p>
                 <p>Your excuse has been copied to the clipboard for your usage.</p>
             </div>
-            <!-- end of overlay-->
+
 
         </div>
-
 
         <!-- footer -->
         <div id="footer">
             <p>Drink More Slurm &copy; 2016 | Moonshine Rosetta</p>
         </div>
-
 
     </div>
 
