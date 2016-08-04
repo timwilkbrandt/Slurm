@@ -2,9 +2,16 @@
 
 slurm.utiliies = {
 
-    ShowLoader: function() {},
+    ShowContainer: function (selector) {
 
-    HideLoader: function () { },
+        $(selector).removeClass('hidden');
+    },
+
+    HideContainer: function (selector) {
+
+        $(selector).addClass('hidden');
+
+    }
 
 
 };
