@@ -265,6 +265,8 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\slurm-decor.png" />
+    <Content Include="Content\images\slurm-logo-large.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
@@ -273,6 +275,12 @@
     <Content Include="Scripts\bindActionCreators.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="fonts\coopbl-webfont.TTF" />
+    <Content Include="fonts\coopbl-webfont.woff" />
+    <Content Include="fonts\coopbl-webfont.woff2" />
+    <Content Include="fonts\ebgaramond08-regular-webfont.ttf" />
+    <Content Include="fonts\ebgaramond08-regular-webfont.woff" />
+    <Content Include="fonts\ebgaramond08-regular-webfont.woff2" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\clipboard-action.js" />
     <Content Include="Scripts\clipboard.js" />
