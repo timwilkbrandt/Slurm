@@ -3,7 +3,8 @@
   <Role name="Moonshine.Slurm.Web">
     <Instances count="1" />
     <ConfigurationSettings>
-      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="DefaultEndpointsProtocol=https;AccountName=slurm;AccountKey=Q1weWpB1mxWqOnsb5uoCZfO/90LQkmwkrOBqVXZRhCgj7g/Tm9zzWCF2jQm94auYn9XBkSC3g8Sw1A4reW+7+g==" />
+      <Setting name="APPINSIGHTS_INSTRUMENTATIONKEY" value="6bc7391c-2b2d-48ec-b83a-c0ca1ce921cb" />
     </ConfigurationSettings>
   </Role>
 </ServiceConfiguration>
