@@ -276,6 +276,7 @@
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\clipboard-action.js" />
     <Content Include="Scripts\clipboard.js" />
+    <Content Include="Scripts\clipboard.min.js" />
     <Content Include="Scripts\combineReducers.js" />
     <Content Include="Scripts\compose.js" />
     <Content Include="Scripts\createStore.js" />

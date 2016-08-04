@@ -1,4 +1,5 @@
 ﻿/// <reference path="slurm-utilities.js" />
+/// <reference path="../clipboard.min.js" />
 
 var slurm = new slurm || {};
 
@@ -6,7 +7,16 @@ slurm.main = {
     util: slurm.utilities || {},
     completedSteps: [],
 
-    init: function () { },
+    init: function () {
+        //Initialize Clicks
+        slurm.main.FBEventSelected();
+        slurm.main.ExecuseSelected();
+        slurm.main.CalendarDateSelected();
+        slurm.main.PrivateEventTypeClick();
+        slurm.main.PublicEventTypeClick();
+        slurm.main.TrendingEventTypeClick();
+        slurm.main.GoHomeClick();
+    },
 
     returnToSteps: function () {
         
@@ -62,7 +72,15 @@ slurm.main = {
 
     ExecuseSelected: function () {
         $('.excuse-item').on('click', function () {
+
             //Save - copy excuse and return - display excuse confirmation
+            /*
+            <textarea id="bar">Mussum ipsum cacilds...</textarea>
+            <!-- Trigger -->
+            <button class="btn" data-clipboard-action="cut" data-clipboard-target="#bar">
+                Cut to clipboard
+            </button>
+            */
         });
     },
 
@@ -95,6 +113,12 @@ slurm.main = {
         })
     },
 
+    RosettaExcuseCloseBttnClick: function () {
+        $('#rosetta-close-bttn').on('click', function () {
+            slurm.main.returnHome();
+        })
+    },
+
     GoHomeClick: function () {
         $('#home-bttn').on('click', function () {
             slurm.main.returnHome();
@@ -103,3 +127,6 @@ slurm.main = {
   
 };
 
+$(document).ready(function () {
+    slurm.main.init();
+});
