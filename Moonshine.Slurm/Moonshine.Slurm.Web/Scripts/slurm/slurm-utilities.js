@@ -2,6 +2,10 @@
 
 slurm.utiliies = {
 
+    Settings: {
+        fbOauthToken: null
+    },
+
     ShowContainer: function (selector) {
 
         $(selector).removeClass('hidden');
@@ -12,6 +16,4 @@ slurm.utiliies = {
         $(selector).addClass('hidden');
 
     }
-
-
 };
