@@ -265,10 +265,15 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\date-picker\jquery-ui.css" />
+    <Content Include="Content\images\bender.png" />
     <Content Include="Content\images\calendar-btn.png" />
+    <Content Include="Content\images\event-image.jpg" />
     <Content Include="Content\images\private-btn-active-sm.png" />
+    <Content Include="Content\images\private-btn-lg.png" />
     <Content Include="Content\images\private-btn-sm.png" />
     <Content Include="Content\images\public-btn-active-sm.png" />
+    <Content Include="Content\images\public-btn-lg.png" />
     <Content Include="Content\images\public-btn-sm.png" />
     <Content Include="Content\images\slurm-decor.png" />
     <Content Include="Content\images\slurm-logo-large.png" />
@@ -299,6 +304,7 @@
     <Content Include="Scripts\jquery-1.10.2.js" />
     <Content Include="Scripts\jquery-1.10.2.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui.js" />
     <Content Include="Scripts\jquery.validate.js" />
     <Content Include="Scripts\jquery.validate.min.js" />
     <Content Include="Scripts\jquery.validate.unobtrusive.js" />
