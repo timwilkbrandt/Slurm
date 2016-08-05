@@ -2,32 +2,193 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>SLURM</h1>
+<div id="wrapper" class="home">
 
-</div>
+    <div id="main">
+        <div id="header">
+            <p>Drink More Slurm &mdash; Excuse Generator</p>
+        </div>
 
-<div class="main">
-    <div class="header-info"></div>
-    <div class="slurm-logo"></div>
-    <div class="event-results">
-        <!--TODO: Wire up slider-->
+        <!-- home page content -->
+        <div id="homepage-content">
+            <div class="content" id="home-click">
+                <div class="left">
+                    <h1>Sorry, we're busy drinking...</h1>
+                    <p>(Click to generate your own excuse)</p>
+                </div>
+                <img src="~/Content/images/slurm-logo-large.png"  class="logo-large" />
+            </div>
+        </div>>
+
+
+
+        <div id="content">
+            <!-- non home page logo and nav -->
+            <div id="logo-and-nav">
+                <div id="logo">
+                    <a href="put the slurm wiki here"><img src="slurm-mini-logo.png" /></a>
+                </div>
+                <div id="nav">
+                    <div class="nav-container">
+                        <div id="nav-calendar-btn">calendar button here</div>
+                        <div id="nav-public-events-btn">public events button here</div>
+                        <div id="nav-private-events-btn">private events button here</div>
+                        <div id="nav-trending-excuses-btn">trending excuses button here</div>
+                    </div>
+                    <div class="trending-excuses-container">
+                        <h2>Trending Excuses</h2>
+                        <p>Bite my shiny metal a$$, I'm busy celebrating Robanukah!</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- screen 2 content calendar -->
+            <div id="calendar-content">
+                <h2>Step 1: Select a date.</h2>
+                <div id="main-calendar">
+
+                </div>
+            </div>
+
+
+            <!-- screen 3 content choice public/private events-->
+            <div id="event-choice-content">
+                <h2>Step 2: Choose between Public and Private Events.</h2>
+                <div class="choice-buttons">
+                    <div id="public-btn"><span class="choice-type">Public Events</span></div>
+                    <div id="private-btn"><span class="choice-type">Private Events</span></div>
+                </div>
+            </div>
+
+
+            <!-- screen 4 content event selector-->
+            <div id="event-section-content">
+                <h2>Step 3: Select your public event.</h2>
+                <div class="event-container">
+                    <div class="event">
+                        <img src="event-image.jpg" />
+                        <h4>Robanukah on Sunset</h4>
+                        <p>Friday, November 25th, 2016 at 8:00 PM</p>
+                    </div>
+                    <div class="event">
+                        <img src="event-image.jpg" />
+                        <h4>Robanukah on Sunset</h4>
+                        <p>Friday, November 25th, 2016 at 8:00 PM</p>
+                    </div>
+                    <div class="event">
+                        <img src="event-image.jpg" />
+                        <h4>Robanukah on Sunset</h4>
+                        <p>Friday, November 25th, 2016 at 8:00 PM</p>
+                    </div>
+                    <div class="event">
+                        <img src="event-image.jpg" />
+                        <h4>Robanukah on Sunset</h4>
+                        <p>Friday, November 25th, 2016 at 8:00 PM</p>
+                    </div>
+                    <div class="event">
+                        <img src="event-image.jpg" />
+                        <h4>Robanukah on Sunset</h4>
+                        <p>Friday, November 25th, 2016 at 8:00 PM</p>
+                    </div>
+                    <div class="event">
+                        <img src="event-image.jpg" />
+                        <h4>Robanukah on Sunset</h4>
+                        <p>Friday, November 25th, 2016 at 8:00 PM</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- screen 5 excuse choice -->
+            <div id="excuse-section-content">
+                <h2>Step 4: Choose your excuse.</h2>
+                <div class="excuse-container">
+                    <div class="excuse">
+                        <img src="excuse-image.jpg" />
+                        <h4>Robanukah on Sunset</h4>
+                        <p>Friday, November 25th, 2016 at 8:00 PM</p>
+                    </div>
+                    <div class="excuse">
+                        <img src="excuse-image.jpg" />
+                        <h4>Robanukah on Sunset</h4>
+                        <p>Friday, November 25th, 2016 at 8:00 PM</p>
+                    </div>
+                    <div class="excuse">
+                        <img src="excuse-image.jpg" />
+                        <h4>Robanukah on Sunset</h4>
+                        <p>Friday, November 25th, 2016 at 8:00 PM</p>
+                    </divat
+                    <div class="excuse">
+                        <img src="excuse-image.jpg" />
+                        <h4>Robanukah on Sunset</h4>
+                        <p>Friday, November 25th, 2016 at 8:00 PM</p>
+                    </div>
+                    <div class="excuse">
+                        <img src="excuse-image.jpg" />
+                        <h4>Robanukah on Sunset</h4>
+                        <p>Friday, November 25th, 2016 at 8:00 PM</p>
+                    </div>
+                    <div class="excuse">
+                        <img src="excuse-image.jpg" />
+                        <h4>Robanukah on Sunset</h4>
+                        <p>Friday, November 25th, 2016 at 8:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            <div id="submit-btn"><p>Click to use this excuse and see what other excuses are trending.</div>
+
+
+            <!-- screen 6 trending excuses -->
+            <div id="trending-excuses">
+                <h2>Trending excuses</h2>
+                <div id="trending-excuse-container">
+                    <p>Trending Excuse 1</p>
+                    <p>Trending Excuse 2</p>
+                    <p>Trending Excuse 3</p>
+                    <div id="left-image"></div>
+                    <div id="right-image"></div>
+                </div>
+            </div>
+
+
+            <!-- screen 7 rosetta excuses -->
+            <div id="rosetta-excuses">
+                <h2>Rosetta Excuses</h2>
+                <div id="rosetta-excuse-container">
+                    <p>rosetta Excuse 1</p>
+                    <p>rosetta Excuse 2</p>
+                    <p>rosetta Excuse 3</p>
+                    <div id="left-image"></div>
+                </div>
+            </div>
+
+
+
+            <!-- rosetta button -->
+            <div id="rosetta-btn">
+                <p>Rosetta Excuses</p>
+            </div>
+
+
+            <!-- overlay -->
+            <div id="overlay">
+                <div id="fb-root"></div>
+                <input type="button" value="Sign in using Facebook" onclick="checkFacebookLogin();" />
+                <p>Thank you for selecting your excuse!</p>
+                <p id="selected-excuse">Your excuse here.</p>
+                <p>Your excuse has been copied to the clipboard for your usage.</p>
+            </div>
+
+
+        </div>
+
+        <!-- footer -->
+        <div id="footer">
+            <p>Drink More Slurm &copy; 2016 | Moonshine Rosetta</p>
+        </div>
+
     </div>
-    <div class="excuse-results">
-        <ul>
-            <li></li>   
-        </ul>
+
     </div>
-</div>
-
-<div id="step-selection-calendar" class="hidden">
-
-</div>
-
-<div id="step-selection-type" class="hidden">
-
-</div>
-
-<div id="step-facebook-login" class="hidden">
-
 </div>

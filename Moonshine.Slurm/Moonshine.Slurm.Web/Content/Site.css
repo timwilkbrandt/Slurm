@@ -1,12 +1,12 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+   /* padding-top: 50px;
+    padding-bottom: 20px;*/
 }
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+   /* padding-left: 15px;
+    padding-right: 15px;*/
 }
 
 /* Override the default bootstrap behavior where horizontal description lists 
@@ -21,4 +21,112 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+@media (min-width: 1200px)
+.container {
+    max-width: none;
+}
+
+
+@font-face {
+  font-family: 'cooper_blackregular';
+  src: url('../../fonts/coopbl-webfont.woff2') format('woff2'),
+        url('../../fonts/coopbl-webfont.ttf') format('ttf'),
+       url('../../fonts/coopbl-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'eb_garamond08_regular';
+  src: url('../../fonts/ebgaramond08-regular-webfont.woff2') format('woff2'),
+       url('../../fonts/ebgaramond08-regular-webfont.tff') format('tff'),
+       url('../../fonts/ebgaramond08-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body, h1 {
+  font-family: 'eb_garamond08_regular';
+  color: #58595b;
+}
+body, p, a, span, img, div,
+aside, h1, h2, h3, h4 {
+  margin: 0;
+  padding: 0;
+}
+
+/*
+green = #cadb2a;
+pink = #ed488d;
+blue = #5996c7;
+darkgrey = #58595b;
+lightgrey = #bcbec0;
+*/
+
+
+#header, #footer {
+  background-color: #cadb2a;
+  height: 50px;
+  width: 100%;
+}
+
+.home #header:after  {
+  content: " ";
+  background: url('images/slurm-decor.png') 0 0 repeat-x;
+  height: 61px;
+  width: 100%;
+  display: block;
+  transform: rotate(180deg);
+  position: absolute;
+  top: 50px;
+}
+
+#header p, #footer p {
+  padding-top: 15px;
+  text-align: center;
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+}
+
+#footer:after {
+  content: " ";
+  background: url(images/slurm-decor.png') 0 0 repeat-x;
+  height: 61px;
+  width: 100%;
+  display: block;
+  position: relative;
+  bottom: 96px;
+}
+
+#homepage-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+  transform: translate(-50%, -50%);
+  width: 650px;
+  text-align: center;
+}
+
+
+.logo-large {
+  width: 250px;
+  float: right;
+}
+
+.left {
+  float: left;
+  margin-top: 70px;
+}
+
+#content {
+  display: none;
+}
+
+#submit-btn {
+  border: 1px solid red;
+  font-family: 'cooper_blackregular';
 }
