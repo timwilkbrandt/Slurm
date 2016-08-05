@@ -26,14 +26,14 @@
             <!-- non home page logo and nav -->
             <div id="logo-and-nav">
                 <div id="logo">
-                    <a href="put the slurm wiki here"><img src="slurm-mini-logo.png" /></a>
+                    <a href="put the slurm wiki here"><img src="~/Content/images/slurm-mini-logo.png" /></a>
                 </div>
                 <div id="nav">
                     <div class="nav-container">
-                        <div id="nav-calendar-btn">calendar button here</div>
-                        <div id="nav-public-events-btn">public events button here</div>
-                        <div id="nav-private-events-btn">private events button here</div>
-                        <div id="nav-trending-excuses-btn">trending excuses button here</div>
+                        <div id="nav-calendar-btn"></div>
+                        <div id="nav-public-events-btn" class="active"></div>
+                        <div id="nav-private-events-btn" class="active"></div>
+                        <div id="nav-trending-excuses-btn" class="active"></div>
                     </div>
                     <div class="trending-excuses-container">
                         <h2>Trending Excuses</h2>
@@ -47,7 +47,8 @@
             <div id="calendar-content" class="hidden">
                 <h2>Step 1: Select a date.</h2>
                 <div id="main-calendar">
-
+                    <!-- Datepicker -->
+                    <div id="datepicker"></div>
                 </div>
             </div>
 
@@ -56,8 +57,8 @@
             <div id="event-choice-content" class="hidden">
                 <h2>Step 2: Choose between Public and Private Events.</h2>
                 <div class="choice-buttons">
-                    <div id="public-btn"><span class="choice-type">Public Events</span></div>
-                    <div id="private-btn"><span class="choice-type">Private Events</span></div>
+                    <div id="public-btn"></div>
+                    <div id="private-btn"></div>
                 </div>
             </div>
 
@@ -67,32 +68,32 @@
                 <h2>Step 3: Select your public event.</h2>
                 <div class="event-container">
                     <div class="event">
-                        <img src="event-image.jpg" />
+                        <img src="~/Content/images/event-image.jpg" />
                         <h4>Robanukah on Sunset</h4>
                         <p>Friday, November 25th, 2016 at 8:00 PM</p>
                     </div>
                     <div class="event">
-                        <img src="event-image.jpg" />
+                        <img src="~/Content/images/event-image.jpg" />
                         <h4>Robanukah on Sunset</h4>
                         <p>Friday, November 25th, 2016 at 8:00 PM</p>
                     </div>
                     <div class="event">
-                        <img src="event-image.jpg" />
+                        <img src="~/Content/images/event-image.jpg" />
                         <h4>Robanukah on Sunset</h4>
                         <p>Friday, November 25th, 2016 at 8:00 PM</p>
                     </div>
                     <div class="event">
-                        <img src="event-image.jpg" />
+                        <img src="~/Content/images/event-image.jpg" />
                         <h4>Robanukah on Sunset</h4>
                         <p>Friday, November 25th, 2016 at 8:00 PM</p>
                     </div>
                     <div class="event">
-                        <img src="event-image.jpg" />
+                        <img src="~/Content/images/event-image.jpg" />
                         <h4>Robanukah on Sunset</h4>
                         <p>Friday, November 25th, 2016 at 8:00 PM</p>
                     </div>
                     <div class="event">
-                        <img src="event-image.jpg" />
+                        <img src="~/Content/images/event-image.jpg" />
                         <h4>Robanukah on Sunset</h4>
                         <p>Friday, November 25th, 2016 at 8:00 PM</p>
                     </div>
@@ -105,38 +106,39 @@
                 <h2>Step 4: Choose your excuse.</h2>
                 <div class="excuse-container">
                     <div class="excuse">
-                        <img src="excuse-image.jpg" />
+                        <img src="~/Content/images/bender.png" />
                         <h4>Robanukah on Sunset</h4>
                         <p>Friday, November 25th, 2016 at 8:00 PM</p>
                     </div>
                     <div class="excuse">
-                        <img src="excuse-image.jpg" />
+                        <img src="~/Content/images/bender.png" />
                         <h4>Robanukah on Sunset</h4>
                         <p>Friday, November 25th, 2016 at 8:00 PM</p>
                     </div>
                     <div class="excuse">
-                        <img src="excuse-image.jpg" />
+                        <img src="~/Content/images/bender.png" />
                         <h4>Robanukah on Sunset</h4>
                         <p>Friday, November 25th, 2016 at 8:00 PM</p>
                     </divat
                     <div class="excuse">
-                        <img src="excuse-image.jpg" />
+                        <img src="~/Content/images/bender.png" />
                         <h4>Robanukah on Sunset</h4>
                         <p>Friday, November 25th, 2016 at 8:00 PM</p>
                     </div>
                     <div class="excuse">
-                        <img src="excuse-image.jpg" />
+                        <img src="~/Content/images/bender.png" />
                         <h4>Robanukah on Sunset</h4>
                         <p>Friday, November 25th, 2016 at 8:00 PM</p>
                     </div>
                     <div class="excuse">
-                        <img src="excuse-image.jpg" />
+                        <img src="~/Content/images/bender.png" />
                         <h4>Robanukah on Sunset</h4>
                         <p>Friday, November 25th, 2016 at 8:00 PM</p>
                     </div>
                 </div>
+                <div id="submit-btn"><p>Click to use this excuse and see what other excuses are trending.</div>
             </div>
-            <div id="submit-btn"><p>Click to use this excuse and see what other excuses are trending.</div>
+            
 
 
             <!-- screen 6 trending excuses -->
@@ -173,6 +175,8 @@
 
             <!-- overlay -->
             <div id="overlay">
+                <div id="fb-root"></div>
+                <input type="button" value="Sign in using Facebook" onclick="checkFacebookLogin();" />
                 <p>Thank you for selecting your excuse!</p>
                 <p id="selected-excuse">Your excuse here.</p>
                 <p>Your excuse has been copied to the clipboard for your usage.</p>
@@ -190,3 +194,10 @@
 
     </div>
 </div>
+
+<script>
+
+$( "#datepicker" ).datepicker({
+  inline: true
+});
+</script>

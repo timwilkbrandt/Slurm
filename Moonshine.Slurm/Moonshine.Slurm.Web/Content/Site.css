@@ -516,3 +516,8 @@ h2 {
   left: 47%;
   color: #cadb2a;
 }
+
+
+.hidden {
+    display: none;
+}
