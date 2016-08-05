@@ -243,3 +243,7 @@ ModelManifest.xml
 
 # FAKE - F# Make
 .fake/
+/Moonshine.Slurm/Moonshine.Slurm.Data
+/New folder
+/Moonshine.Slurm/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+/Moonshine.Slurm/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml

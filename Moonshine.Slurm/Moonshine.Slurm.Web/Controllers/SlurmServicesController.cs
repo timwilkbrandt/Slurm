@@ -45,7 +45,8 @@ namespace Moonshine.Slurm.Web.Controllers
 
         public JsonResult GetTrendingEvent()
         {
-            return null;
+            var trendingEvent = new Models.TrendingEvent();
+            return Json(trendingEvent.GetTrendingEvents());
         }
     }
 }
