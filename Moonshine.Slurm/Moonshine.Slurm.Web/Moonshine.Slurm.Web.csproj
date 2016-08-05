@@ -265,8 +265,16 @@
   <ItemGroup>
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\images\calendar-btn.png" />
+    <Content Include="Content\images\private-btn-active-sm.png" />
+    <Content Include="Content\images\private-btn-sm.png" />
+    <Content Include="Content\images\public-btn-active-sm.png" />
+    <Content Include="Content\images\public-btn-sm.png" />
     <Content Include="Content\images\slurm-decor.png" />
     <Content Include="Content\images\slurm-logo-large.png" />
+    <Content Include="Content\images\slurm-mini-logo.png" />
+    <Content Include="Content\images\trending-btn-active-sm.png" />
+    <Content Include="Content\images\trending-btn-sm.png" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
