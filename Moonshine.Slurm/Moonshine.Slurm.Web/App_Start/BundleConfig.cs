@@ -23,6 +23,13 @@ namespace Moonshine.Slurm.Web
                       "~/Scripts/bootstrap.js",
                       "~/Scripts/respond.js"));
 
+
+            bundles.Add(new ScriptBundle("~/bundles/slurm").Include(
+                     "~/Scripts/slurm/slurm-enums.js",
+                     "~/Scripts/slurm/slurm-utilities.js",
+                     "~/Scripts/slurm/slurm-services.js",
+                     "~/Scripts/slurm/slurm.js"));
+
             bundles.Add(new StyleBundle("~/Content/css").Include(
                       "~/Content/bootstrap.css",
                       "~/Content/site.css",

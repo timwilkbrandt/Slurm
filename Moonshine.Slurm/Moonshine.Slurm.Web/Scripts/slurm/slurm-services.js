@@ -1,4 +1,4 @@
-﻿var slurm = new slurm || {};
+﻿var slurm = slurm || {};
 
 slurm.services = {
 

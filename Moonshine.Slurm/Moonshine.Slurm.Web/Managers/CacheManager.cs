@@ -4,12 +4,19 @@ using System.Linq;
 using System.Runtime.Caching;
 using Microsoft.ApplicationServer.Caching;
 
-namespace Moonshine.Zoidberg.Zagats.Web.Managers
+namespace Moonshine.Slurm.Web.Managers
 {
     public class CacheManager
     {        
         private string _key;
         private DataCache _cache;
+
+        public CacheManager(string key)
+        {
+            DataCacheFactory slurmCacheFactory = new DataCacheFactory();
+            _cache = slurmCacheFactory.GetDefaultCache();
+            _key = key;
+        }
 
         public CacheManager(string method, List<string> inputs)
         {
@@ -23,7 +30,6 @@ namespace Moonshine.Zoidberg.Zagats.Web.Managers
             DataCacheFactory slurmCacheFactory = new DataCacheFactory();
             _cache = slurmCacheFactory.GetDefaultCache();
         }
-
         
         public object GetFromCache()
         {
