@@ -130,3 +130,7 @@ lightgrey = #bcbec0;
   border: 1px solid red;
   font-family: 'cooper_blackregular';
 }
+
+.hidden {
+    display:none;
+}

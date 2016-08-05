@@ -1,13 +1,15 @@
 ﻿/// <reference path="slurm-utilities.js" />
 /// <reference path="../clipboard.min.js" />
 
-var slurm = new slurm || {};
+var slurm = slurm || {};
 
 slurm.main = {
+
     util: slurm.utilities || {},
     completedSteps: [],
 
     init: function () {
+
         //Initialize Clicks
         slurm.main.FBEventSelected();
         slurm.main.ExecuseSelected();
@@ -15,6 +17,7 @@ slurm.main = {
         slurm.main.PrivateEventTypeClick();
         slurm.main.PublicEventTypeClick();
         slurm.main.TrendingEventTypeClick();
+        slurm.main.BeginStepsClick();
         slurm.main.GoHomeClick();
     },
 
@@ -88,6 +91,12 @@ slurm.main = {
         $('.calendar-date-selected').on('click', function () {
             slurm.main.ShowStep2();
         });
+    },
+
+    BeginStepsClick: function () {
+        $('.logo-large').on('click', function () {
+            slurm.main.ShowStep1();
+        });     
     },
 
     PublicEventTypeClick: function () {

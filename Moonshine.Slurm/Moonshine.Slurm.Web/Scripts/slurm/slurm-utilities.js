@@ -1,13 +1,13 @@
-﻿var slurm = new slurm || {};
+﻿var slurm = slurm || {};
 
 slurm.utilities = {
 
-    Settings: {
+    settings: {
         fbOauthToken: null,
-        views: ['#home', '#step1', '#step2', '#step3', '#step4', '#trending', '#facebook-login', '#event-excuses']
+        views: ['#homepage-content', '#calendar-content', '#event-choice-content', '#event-section-content', '#excuse-section-content', '#trending-excuses', '#facebook-login', '#rosetta-excuse']
     },
 
-    ShowContainer: function (selector) {
+    showContainer: function (selector) {
 
         if ($(selector).hasClass('hidden')) {
 
@@ -16,7 +16,7 @@ slurm.utilities = {
 
     },
 
-    HideContainer: function (selector) {
+    hideContainer: function (selector) {
 
         if (!$(selector).hasClass('hidden')) {
 
@@ -24,9 +24,9 @@ slurm.utilities = {
         }
     },
 
-    ChangeViews: function (selector) {
+    changeViews: function (selector) {
 
-        $.each(slurm.utilities.Settings.views, function (index, view) {
+        $.each(slurm.utilities.settings.views, function (index, view) {
             if (!$(view).hasClass('hidden')) {
                 $(view).fadeOut('fast', function () {
                     $(selector).fadeIn('slow', function () { });
