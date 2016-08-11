@@ -101,7 +101,7 @@ h2 {
 }
 
 #footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
 }
 
@@ -204,10 +204,14 @@ h2 {
   background: url(images/calendar-btn.png) 0 0 no-repeat;
   background-size: 100%;
   width: 120px;
+  display: none;
+  float:left;
 }
 #logo-and-nav #nav #nav-public-events-btn {
   background: url(images/public-btn-sm.png) 0 0 no-repeat;
   background-size: 100%;
+  display: none;
+  float:left;
 }
 #logo-and-nav #nav #nav-public-events-btn.active {
   background: url(images/public-btn-active-sm.png) 0 0 no-repeat;
@@ -216,6 +220,8 @@ h2 {
 #logo-and-nav #nav #nav-private-events-btn {
   background: url(images/private-btn-sm.png) 0 0 no-repeat;
   background-size: 100%;
+  display: none;
+  float:left;
 }
 #logo-and-nav #nav #nav-private-events-btn.active {
   background: url(images/private-btn-active-sm.png) 0 0 no-repeat;
@@ -224,6 +230,8 @@ h2 {
 #logo-and-nav #nav #nav-trending-excuses-btn {
   background: url(images/trending-btn-sm.png) 0 0 no-repeat;
   background-size: 100%;
+  display: none;
+  float:left;
 }
 #logo-and-nav #nav #nav-trending-excuses-btn.active {
   background: url(images/trending-btn-active-sm.png) 0 0 no-repeat;
@@ -253,7 +261,7 @@ h2 {
   margin-bottom: 20px;
 }
 #calendar-content.active {
-    display: block;
+    /*display: block;*/
     height: auto;
     width: 100%;
     text-align: center;
@@ -267,13 +275,13 @@ h2 {
 
 /* event choice */
 #event-choice-content.active {
-  display: block;
   height: auto;
   width: 100%;
   text-align: center;
   margin-top: 8%;
   margin-bottom: 8%;
 }
+
 #event-choice-content .choice-buttons div {
   height: 160px;
   width: 198px;
@@ -292,7 +300,6 @@ h2 {
 
 /* event selection */
 #event-section-content.active {
-  display: block;
   height: auto;
   width: 100%;
   text-align: center;
@@ -348,7 +355,6 @@ h2 {
 /* excuse section */
 
 #excuse-section-content.active {
-  display: block;
   height: auto;
   width: 100%;
   text-align: center;
@@ -416,7 +422,6 @@ h2 {
 
 /* trending excuses */
 #trending-excuses.active {
-  display: block;
   height: auto;
   width: 100%;
   text-align: center;
@@ -446,7 +451,6 @@ h2 {
 
 /* rosetta excuses */
 #rosetta-excuses.active {
-  display: block;
   height: auto;
   width: 100%;
   text-align: center;
@@ -478,15 +482,38 @@ h2 {
 
 #overlay.active {
   display: block;
-  position: fixed;
-  top: 50%;
-  transform: translateY(-50%);
-  height: 50%;
-  width: 50%;
-  background: #FFF;
-  border: 5px solid #cadb2a;
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: #c4d661;
+  opacity:.6;
+  z-index:1;
 }
 
+.fb-overlay {
+  display: block;
+  position: absolute;
+  margin:0 auto;
+  transform:translate(-50%, -50%);;
+  top:50%;
+  left:50%;
+  width:30%;
+  height:20%;
+  z-index:99;
+  background:#fff;
+  border:1px solid;
+
+}
+
+.fb-close-bttn {
+    border: 1px solid;
+    border-radius: 3px;
+    width: 75px;
+    text-align: center;
+    float: right;
+    cursor:pointer;
+}
 
 /* rosetta button */
 #rosetta-btn {
@@ -495,7 +522,7 @@ h2 {
     border: 2px solid #5996c7;
     position: fixed;
     left: 0;
-    bottom: 5%;
+    bottom: 35%;
     height: 120px;
     width: 120px;
     border-radius: 60px;
@@ -520,4 +547,12 @@ h2 {
 
 .hidden {
     display: none;
+}
+
+.overlay-container {
+    display:none;
+}
+
+.overlay-container.active {
+    display:block;
 }

@@ -54,6 +54,7 @@
     <DiagnosticsConfiguration Include="Moonshine.Slurm.WebContent\diagnostics.wadcfgx" />
   </ItemGroup>
   <ItemGroup>
+    <PublishProfile Include="Profiles\lgm-trackerProduction.azurePubxml" />
     <PublishProfile Include="Profiles\SlurmStaging.azurePubxml" />
   </ItemGroup>
   <!-- Import the target files for this project template -->

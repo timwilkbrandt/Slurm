@@ -10,7 +10,7 @@
         </div>
 
         <!-- home page content -->
-        <div id="homepage-content">
+        <div id="homepage-content" class="">
             <div class="content" id="home-click">
                 <div class="left">
                     <h1>Sorry, we're busy drinking...</h1>
@@ -31,11 +31,11 @@
                 <div id="nav">
                     <div class="nav-container">
                         <div id="nav-calendar-btn"></div>
-                        <div id="nav-public-events-btn" class="active"></div>
-                        <div id="nav-private-events-btn" class="active"></div>
-                        <div id="nav-trending-excuses-btn" class="active"></div>
+                        <div id="nav-public-events-btn"></div>
+                        <div id="nav-private-events-btn"></div>
+                        <div id="nav-trending-excuses-btn"></div>
                     </div>
-                    <div class="trending-excuses-container">
+                    <div id="trending-excuses-container" class="trending-excuses-container hidden">
                         <h2>Trending Excuses</h2>
                         <p>Bite my shiny metal a$$, I'm busy celebrating Robanukah!</p>
                     </div>
@@ -44,7 +44,7 @@
 
 
             <!-- screen 2 content calendar -->
-            <div id="calendar-content" class="hidden">
+            <div id="calendar-content">
                 <h2>Step 1: Select a date.</h2>
                 <div id="main-calendar">
                     <!-- Datepicker -->
@@ -54,7 +54,7 @@
 
 
             <!-- screen 3 content choice public/private events-->
-            <div id="event-choice-content" class="hidden">
+            <div id="event-choice-content">
                 <h2>Step 2: Choose between Public and Private Events.</h2>
                 <div class="choice-buttons">
                     <div id="public-btn"></div>
@@ -64,7 +64,7 @@
 
 
             <!-- screen 4 content event selector-->
-            <div id="event-section-content" class="hidden">
+            <div id="event-section-content">
                 <h2>Step 3: Select your public event.</h2>
                 <div class="event-container">
                     <div class="event">
@@ -102,7 +102,7 @@
 
 
             <!-- screen 5 excuse choice -->
-            <div id="excuse-section-content" class="hidden">
+            <div id="excuse-section-content">
                 <h2>Step 4: Choose your excuse.</h2>
                 <div class="excuse-container">
                     <div class="excuse">
@@ -172,16 +172,24 @@
                 <p>Rosetta Excuses</p>
             </div>
 
+            <div class="overlay-container active">
+                <!-- overlay -->
+                <div id="overlay" class="active">
+                    <div id="fb-root"></div>
+                    <div class="hidden">
+                        <p>Thank you for selecting your excuse!</p>
+                        <p id="selected-excuse">Your excuse here.</p>
+                        <p>Your excuse has been copied to the clipboard for your usage.</p>
+                    </div>
+                </div>
 
-            <!-- overlay -->
-            <div id="overlay">
-                <div id="fb-root"></div>
-                <input type="button" value="Sign in using Facebook" onclick="checkFacebookLogin();" />
-                <p>Thank you for selecting your excuse!</p>
-                <p id="selected-excuse">Your excuse here.</p>
-                <p>Your excuse has been copied to the clipboard for your usage.</p>
+                <div class="fb-overlay">
+                    <div class="fb-close-bttn">close</div>
+                    <p>SLURM is a Facebook driven application!</p>
+                    <p>Please Log in using Facebook!</p>
+                    <div class="fb-login-button" data-max-rows="1" data-size="xlarge" data-show-faces="false" data-auto-logout-link="false" onclick="checkFacebookLogin();"></div>
+                </div>
             </div>
-
 
         </div>
 
@@ -193,11 +201,3 @@
     </div>
 
     </div>
-
-
-<script>
-
-$( "#datepicker" ).datepicker({
-  inline: true
-});
-</script>
