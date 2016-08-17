@@ -132,7 +132,7 @@ var serviceAdapter = function () {
                 }
 
                 if (_this.callbacks.customSuccessCallback != null) {
-                    _this.callbacks.customSuccessCallback(e);
+                    _this.callbacks.customSuccessCallback(_this.responseJson);
                 }
 
             };

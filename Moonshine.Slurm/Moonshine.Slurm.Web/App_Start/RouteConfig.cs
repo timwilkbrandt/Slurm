@@ -18,6 +18,11 @@ namespace Moonshine.Slurm.Web
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
             );
+            routes.MapRoute(
+                name: "Service",
+                url: "{controller}/{action}/{id}",
+                defaults: new { controller = "SlurmServices", action = "GetEvents", id = UrlParameter.Optional }
+            );
         }
     }
 }

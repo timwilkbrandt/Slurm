@@ -14,7 +14,7 @@ namespace Moonshine.Slurm.Service.Adapters
 {
     public class FacebookServiceAdapter
     {
-        public List<FacebookPlaceWithEvents> GetPublicServiceEvents(string ipAddress, string accessToken, DateTime searchDate, int distance = 100, int limit = 1000)
+        public List<FacebookEvent> GetPublicServiceEvents(string ipAddress, string accessToken, DateTime searchDate, int distance = 100, int limit = 1000)
         {
             //get lat/long from ip
             GeoLocationServiceAdapter geo = new GeoLocationServiceAdapter();
@@ -60,6 +60,7 @@ namespace Moonshine.Slurm.Service.Adapters
                 result = client.DownloadString(url);
 
                 var placesWithEvents = new List<FacebookPlaceWithEvents>();
+                var filteredEvents = new List<FacebookEvent>();
 
                 for (int i = 0; i < places.data.Length - 1; i++) //HACK:  discarding the last one!
                 {
@@ -76,10 +77,18 @@ namespace Moonshine.Slurm.Service.Adapters
                         var placeWithEvents = result.Substring(0, pos2);
 
                         var theEvent = JsonConvert.DeserializeObject<FacebookPlaceWithEvents>(placeWithEvents);
-
+                        
                         if (theEvent.events != null && theEvent.events.data.Length > 0)
                         {
-                            placesWithEvents.Add(theEvent);
+                            foreach(var targetEvent in theEvent.events.data)
+                            {
+                                if (targetEvent.start_time.Month == searchDate.Month )
+                                {
+                                    filteredEvents.Add(targetEvent);
+                                }
+                            }
+
+                            //placesWithEvents.Add(theEvent);
                         }
                     }
                     catch
@@ -88,7 +97,7 @@ namespace Moonshine.Slurm.Service.Adapters
                     }
                 }
 
-                return placesWithEvents;
+                return filteredEvents;
             }
         }
 

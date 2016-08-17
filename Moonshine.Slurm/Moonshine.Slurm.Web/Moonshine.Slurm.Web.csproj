@@ -258,6 +258,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Managers\CacheManager.cs" />
+    <Compile Include="Models\FaceBookPublicEventRequest.cs" />
     <Compile Include="Models\TrendingEvent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -268,8 +269,10 @@
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\date-picker\jquery-ui.css" />
     <Content Include="Content\images\bender.png" />
+    <Content Include="Content\images\Bender_dancing_animated.gif" />
     <Content Include="Content\images\calendar-btn.png" />
     <Content Include="Content\images\event-image.jpg" />
+    <Content Include="Content\images\GL_-_Benders.png" />
     <Content Include="Content\images\private-btn-active-sm.png" />
     <Content Include="Content\images\private-btn-lg.png" />
     <Content Include="Content\images\private-btn-sm.png" />

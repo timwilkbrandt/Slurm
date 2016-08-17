@@ -26,12 +26,16 @@ namespace Moonshine.Slurm.Service.Adapters.Common
 
     public class FacebookEvent
     {
+        private DateTime _startTime;
+
         public string id;
         public string name;
         public string description;
-        public DateTime start_time;
+        public DateTime start_time { get { return _startTime; } set { _startTime = value; formatted_start_time = string.Format("{0}-{1}", value.Month, value.Day); } }
+        public string formatted_start_time;
         public Cover cover;
         public PictureData picture;
+
     }
 
     public class Cover
