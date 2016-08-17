@@ -275,14 +275,17 @@
     <Content Include="Content\images\GL_-_Benders.png" />
     <Content Include="Content\images\private-btn-active-sm.png" />
     <Content Include="Content\images\private-btn-lg.png" />
+    <Content Include="Content\images\private-btn-sm-coming.png" />
     <Content Include="Content\images\private-btn-sm.png" />
     <Content Include="Content\images\public-btn-active-sm.png" />
     <Content Include="Content\images\public-btn-lg.png" />
+    <Content Include="Content\images\public-btn-sm-coming.png" />
     <Content Include="Content\images\public-btn-sm.png" />
     <Content Include="Content\images\slurm-decor.png" />
     <Content Include="Content\images\slurm-logo-large.png" />
     <Content Include="Content\images\slurm-mini-logo.png" />
     <Content Include="Content\images\trending-btn-active-sm.png" />
+    <Content Include="Content\images\trending-btn-sm-coming.png" />
     <Content Include="Content\images\trending-btn-sm.png" />
     <Content Include="Content\images\ui-icons_444444_256x240.png" />
     <Content Include="Content\images\ui-icons_555555_256x240.png" />

@@ -218,7 +218,7 @@ h2 {
   background-size: 100%;
 }
 #logo-and-nav #nav #nav-private-events-btn {
-  background: url(images/private-btn-sm.png) 0 0 no-repeat;
+  background: url(images/private-btn-sm-coming.png) 0 0 no-repeat;
   background-size: 100%;
   display: none;
   float:left;
@@ -228,7 +228,7 @@ h2 {
   background-size: 100%;
 }
 #logo-and-nav #nav #nav-trending-excuses-btn {
-  background: url(images/trending-btn-sm.png) 0 0 no-repeat;
+  background: url(images/trending-btn-sm-coming.png) 0 0 no-repeat;
   background-size: 100%;
   display: none;
   float:left;
